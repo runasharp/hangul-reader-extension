@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Hangul Reader",
+  "version": "1.0",
+  "description": "Hover over Hangul characters to see how they are read",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
